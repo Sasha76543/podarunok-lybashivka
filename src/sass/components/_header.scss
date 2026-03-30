@@ -1,0 +1,19 @@
+.header .inner-container {
+    @include flex (space-between);
+    padding: 20px;
+}
+
+.burgermenu{
+background-color: transparent;
+border:none;
+padding: 0;
+@media screen and (min-width: 1200px) {
+    display:none;
+}
+
+&__svg{
+    width:28px;
+    height:28px
+}
+}
+

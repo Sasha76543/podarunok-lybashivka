@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "parcel": "^2.16.4",
+    "sass": "^1.98.0"
+  },
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /chocolate/",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.4",
+    "parcel-reporter-clean-dist": "^1.0.4"
+  }
+}

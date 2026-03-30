@@ -1,0 +1,14 @@
+$colors: (
+'background-primary': #FAFAFA,
+'background-secondary':#FFF,
+'background-third':#1E1823,
+'text-primary': #111,
+'text-third':#FD9222,
+'text-secondary':#FFF,
+'text-fourth':rgba(17, 17, 17, 0.70),
+'text-modal':rgba(64, 64, 64, 0.30),
+'border-modal':rgba(17, 17, 17, 0.05),
+);
+@function getColor($key) {
+@return map-get($colors, $key);
+};

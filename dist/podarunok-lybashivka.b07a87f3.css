@@ -1,0 +1,86 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+}
+
+ul, p, h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: #fd9222;
+  border: none;
+  display: block;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+.inner-container {
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media screen and (width >= 768px) {
+  .inner-container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (width >= 1200px) {
+  .inner-container {
+    max-width: 1200px;
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.header .inner-container {
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+}
+
+.burgermenu {
+  background-color: #0000;
+  border: none;
+  padding: 0;
+}
+
+@media screen and (width >= 1200px) {
+  .burgermenu {
+    display: none;
+  }
+}
+
+.burgermenu__svg {
+  width: 28px;
+  height: 28px;
+}
+/*# sourceMappingURL=podarunok-lybashivka.b07a87f3.css.map */

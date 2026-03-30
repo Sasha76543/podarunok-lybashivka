@@ -1,0 +1,21 @@
+@mixin text(
+  $fsize: 14px,
+  $lheight: normal,
+  $lspacing: -0.28px,
+  $fweight: 400,
+  $fstyle: normal
+) {
+  font-size: $fsize;
+  line-height: $lheight;
+  letter-spacing: $lspacing;
+  font-weight: $fweight;
+  font-style: $fstyle;
+}
+
+@mixin flex($justify: center, $direction: row, $align: center, $wrap: nowrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}

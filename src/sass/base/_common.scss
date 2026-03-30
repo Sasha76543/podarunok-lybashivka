@@ -1,0 +1,52 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background-color: #fafafa;
+}
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  display: block;
+  border: none;
+  background-color: getColor('text-third');
+  cursor: pointer;
+}
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+.inner-container {
+  width: 100%;
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    padding: 0 32px;
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}

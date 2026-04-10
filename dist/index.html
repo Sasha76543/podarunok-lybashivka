@@ -2,10 +2,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Podarunok-Lybashivka</title>
+        <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
+    /> -->
     <link rel="stylesheet" href="/podarunok-lybashivka.b07a87f3.css">
 </head><body>
     <header class="header" id="1">
-        <div class="innner-container">
+        <div class="inner-container">
        <a class="logo" href="#">Podarunok<span class="logo__simply">Lybashivka</span> </a>
        <nav class="navigation">
          <button class="burgermenu" data-open-menu="">
@@ -15,35 +23,48 @@
          </button>
          <ul class="header-list">
             <li class="header-list__item">
-                <a class="header-list__link" href="#1">Про нас</a>
+                <a class="header-list__link" href="#1">Привітання</a>
             </li>
             <li class="header-list__item">
-                <a class="header-list__link" href="#2">Ростові костюми</a>
+                <a class="header-list__link" href="#2">Аніматори</a>
             </li>
             <li class="header-list__item">
-                <a class="header-list__link" href="#3">Аніматори</a>
-            </li>
-            <li class="header-list__item">
-                <a class="header-list__link" href="#4">Дорога</a>
+                <a class="header-list__link" href="#3">Замовити</a>
             </li>
          </ul>
        </nav>
        <div class="menu-right">
         <a href="https://www.instagram.com/podarynok_lybashivka?igsh=azhqMno4a2NrdXF4" class="menu-right__link">
-           <svg class="menu-right__svg">
-              <use href="/instagram-icon-svgrepo-com.efb4e11e.svg"></use>
-           </svg>
+           <img class="menu-right__svg" src="/instagram-icon-svgrepo-com.efb4e11e.fa2f9de2.svg" alt="instagram">
         </a>
         <a href="https://www.tiktok.com/@_animatorsss01_?_r=1&amp;_t=ZS-957n7Y4OM0y" class="menu-right__link">
-            <svg class="menu-right__svg">
-                <use href="/free-icon-tik-tok-3046120.afa30f72.png"></use>
-            </svg>
+            <img class="menu-right__svg" src="/free-icon-tik-tok-3046120.afa30f72.256f0ded.png" alt="tik-tok">
         </a>
        </div>
        </div>
     </header>
+  <img class="form-foto" src="/photo_2026-04-03_14-47-46.92bd28b9.jpg" alt="foto">
+  
+  <button id="openModal" onlick="openModal" type="submit">Замовити</button>
+
+<div id="modal" class="modal">
+<div class="modal-content">
+  <h2>Замовлення</h2>
+   <span class="close" style="cursor: pointer; position: absolute; right: 10px">✖</span>
+
+<form id="form">
+  <input type="text" id="name" placeholder="Ваше ім'я" required="">
+  <input type="tel" id="phone" placeholder="Телефон" required="">
+  <input type="date" id="date" placeholder="дата" required="">
+  <input type="text" id="misto" placeholder="Місце" required="">
+   <button id="submitOrder">Замовити</button>
+</form>
+</div>
+</div>
 
 
-    <script src="/podarunok-lybashivka.09c24910.js"></script>
+
+
+    <script src="/podarunok-lybashivka.f85ccfd0.js"></script>
 
 <script src="/podarunok-lybashivka.59712999.js"></script></body></html>

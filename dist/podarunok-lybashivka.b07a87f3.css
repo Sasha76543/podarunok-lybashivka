@@ -83,4 +83,139 @@ img {
   width: 28px;
   height: 28px;
 }
+
+.header-list {
+  display: none;
+}
+
+@media screen and (width >= 1200px) {
+  .header-list {
+    gap: 24px;
+    display: flex;
+  }
+}
+
+.menu-right {
+  display: none;
+}
+
+@media screen and (width >= 1200px) {
+  .menu-right {
+    display: flex;
+  }
+}
+
+.menu-right__svg {
+  color: #000;
+  width: 28px;
+  height: 28px;
+}
+
+.logo {
+  text-transform: uppercase;
+  letter-spacing: -.54px;
+  color: #111;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 20px;
+  display: flex;
+}
+
+.logo__svg {
+  width: 21px;
+  height: 21px;
+  margin-left: 4px;
+}
+
+.logo__simply {
+  letter-spacing: -.54px;
+  color: #111;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.header-list__link {
+  letter-spacing: -.28px;
+  color: #111;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.header-list__link:hover, .header-list__link:focus {
+  color: #fd9222;
+}
+
+.menu-right__svg {
+  width: 24px;
+  height: 24px;
+}
+
+.menu-right__svg:first-child {
+  margin-right: 18px;
+}
+
+.menu-right__svg:hover, .menu-right__svg:focus {
+  fill: #fd9222;
+}
+
+.modal {
+  z-index: 1;
+  background-color: #00000080;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 10px;
+  width: 300px;
+  margin: 10% auto;
+  padding: 20px;
+  position: relative;
+}
+
+.close {
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+.form-foto {
+  heigth: 350px;
+  border-radius: 20px;
+  width: 500px;
+}
+
+@media screen and (width >= 1200px) {
+  .form-foto {
+    border-radius: 20px;
+    width: 200px;
+    height: 100px;
+  }
+}
 /*# sourceMappingURL=podarunok-lybashivka.b07a87f3.css.map */

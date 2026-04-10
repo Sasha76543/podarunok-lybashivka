@@ -1,19 +1,79 @@
-.header .inner-container {
+.header .inner-container{
     @include flex (space-between);
     padding: 20px;
+    display: flex;
 }
 
 .burgermenu{
-background-color: transparent;
-border:none;
-padding: 0;
-@media screen and (min-width: 1200px) {
-    display:none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+    
+
+    &__svg{
+        width: 28px;
+        height: 28px;
+    }
 }
 
-&__svg{
-    width:28px;
-    height:28px
+.header-list{
+    display: none;
+    @media screen and (min-width: 1200px) {
+            display: flex;
+            gap: 24px;
+    }
 }
+.menu-right{
+    display: none;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+
+    &__svg{
+                width: 28px;
+        height: 28px; 
+        color: black;
+    }
 }
 
+
+.logo{
+    @include flex;
+    text-transform: uppercase;
+        @include text (18px, 20px, -0.54px, 700, italic);
+        color: getColor("text-primary");
+    &__svg{
+        width: 21px;
+        height: 21px;
+        margin-left: 4px;
+    }
+    &__simply{
+        @include text (18px, 20px, -0.54px, 700);
+        color: getColor("text-primary");
+    }
+}
+
+.header-list__link{
+    @include text ($fweight: 500, $lheight: 16px, $lspacing: -0.28px);
+    color: getColor("text-primary");
+
+    &:hover,
+        &:focus {
+            color: getColor('text-third');
+        }
+}
+
+.menu-right__svg{
+    width: 24px;
+    height: 24px;
+    &:nth-child(1){
+        margin-right: 18px;
+    }
+    &:hover, &:focus{
+        fill: getColor('text-third');
+    }
+
+}

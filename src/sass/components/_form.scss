@@ -1,0 +1,51 @@
+ .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  /* Контент */
+  .modal-content {
+    background: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  /* Кнопка закриття */
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+  }
+
+  button {
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+
+  .form-foto{
+    width: 500px;
+    heigth: 350px;
+    border-radius: 20px;
+     @media screen and (min-width: 1200px) {
+        width: 200px;
+        height: 100px;
+        border-radius: 20px;
+      }
+  }
